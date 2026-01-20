@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TapToTop</string>
+    <string name="accessibility_service_description">ステータスバーをタップして最上部にスクロールします。</string>
+    <string name="btn_open_settings">アクセシビリティ設定を開く</string>
+    <string name="btn_battery_settings">バッテリー制限を解除する</string>
+    <string name="label_repeat_count">スクロールの強さ (連続実行回数)</string>
+    <string name="label_duration">1回あたりのスクロール速度 (ms)</string>
+    <string name="label_duration_hint">値が小さいほど高速で、強力な慣性がつきます。</string>
+    <string name="label_settings_auto_save">設定は変更すると即座に保存されます。</string>
+    <string name="error_service_disabled">アクセシビリティサービスが無効です。</string>
+    <string name="error_how_to_fix">ステータスバーのタップ検知とスクロール実行には、この許可が必要です。</string>
+    <string name="error_steps">手順：\n1. 上のボタンをタップ\n2. リストから「TapToTop」を選択（「インストール済みのアプリ」にある場合が多いです）\n3. スイッチを「ON」にする</string>
+    <string name="battery_hint">注意: Android 16やSamsung端末で安定して動作させるため、バッテリー使用量を「制限なし」に設定してください。</string>
+</resources>

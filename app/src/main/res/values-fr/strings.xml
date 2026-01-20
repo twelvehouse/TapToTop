@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TapToTop</string>
+    <string name="accessibility_service_description">Faites défiler vers le haut en appuyant sur la barre d\'état.</string>
+    <string name="btn_open_settings">Ouvrir les paramètres d\'accessibilité</string>
+    <string name="btn_battery_settings">Désactiver l\'optimisation de la batterie</string>
+    <string name="label_repeat_count">Puissance de défilement (Nombre de répétitions)</string>
+    <string name="label_duration">Vitesse de défilement (ms)</string>
+    <string name="label_duration_hint">Une valeur plus petite signifie une impulsion plus rapide et plus puissante.</string>
+    <string name="label_settings_auto_save">Les paramètres sont enregistrés immédiatement après modification.</string>
+    <string name="error_service_disabled">Le service d\'accessibilité est désactivé.</string>
+    <string name="error_how_to_fix">TapToTop nécessite cette autorisation pour détecter les clics sur la barre d\'état et effectuer le défilement.</string>
+    <string name="error_steps">Étapes :\n1. Appuyez sur le bouton ci-dessus.\n2. Trouvez \"TapToTop\" dans la liste.\n3. Activez le service.</string>
+    <string name="battery_hint">Note : Pour garantir un fonctionnement fiable sur Android 16/Samsung, veuillez régler l\'utilisation de la batterie sur \"Non restreinte\".</string>
+</resources>

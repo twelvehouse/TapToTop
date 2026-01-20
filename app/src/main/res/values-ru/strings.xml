@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TapToTop</string>
+    <string name="accessibility_service_description">Прокрутка наверх при нажатии на строку состояния.</string>
+    <string name="btn_open_settings">Открыть настройки специальных возможностей</string>
+    <string name="btn_battery_settings">Отключить оптимизацию батареи</string>
+    <string name="label_repeat_count">Сила прокрутки (Количество повторений)</string>
+    <string name="label_duration">Скорость прокрутки (мс)</string>
+    <string name="label_duration_hint">Меньшее значение означает более быстрый и мощный импульс.</string>
+    <string name="label_settings_auto_save">Настройки сохраняются сразу после изменения.</string>
+    <string name="error_service_disabled">Служба специальных возможностей отключена.</string>
+    <string name="error_how_to_fix">TapToTop требуется это разрешение для обнаружения нажатий на строку состояния и выполнения прокрутки.</string>
+    <string name="error_steps">Шаги:\n1. Нажмите кнопку выше.\n2. Найдите \"TapToTop\" в списке.\n3. Переключите выключатель в положение ВКЛ.</string>
+    <string name="battery_hint">Примечание: Для надежной работы на Android 16/Samsung установите использование батареи на «Не ограничено».</string>
+</resources>
