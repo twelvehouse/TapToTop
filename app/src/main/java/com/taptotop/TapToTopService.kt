@@ -27,9 +27,12 @@ class TapToTopService : AccessibilityService() {
     private fun setupOverlay() {
         windowManager = getSystemService(WINDOW_SERVICE) as WindowManager
         
+        val prefs = getSharedPreferences("settings", MODE_PRIVATE)
+        val height = prefs.getInt("overlay_height", 30)
+
         val params = WindowManager.LayoutParams(
             WindowManager.LayoutParams.MATCH_PARENT,
-            getStatusBarHeight(),
+            height,
             WindowManager.LayoutParams.TYPE_ACCESSIBILITY_OVERLAY,
             WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE or 
                     WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL or 
@@ -53,6 +56,9 @@ class TapToTopService : AccessibilityService() {
     }
 
     private fun performScrollAction() {
+        // Refresh overlay height if it was changed in settings
+        updateOverlayHeight()
+
         val currentWindows = windows
         var targetNode: AccessibilityNodeInfo? = null
         
@@ -69,6 +75,19 @@ class TapToTopService : AccessibilityService() {
         val duration = prefs.getInt("duration", 20).toLong()
 
         executeCustomFlick(node, repeatCount, duration)
+    }
+
+    private fun updateOverlayHeight() {
+        val prefs = getSharedPreferences("settings", MODE_PRIVATE)
+        val newHeight = prefs.getInt("overlay_height", 30)
+        
+        overlayView?.let { view ->
+            val params = view.layoutParams as? WindowManager.LayoutParams
+            if (params != null && params.height != newHeight) {
+                params.height = newHeight
+                windowManager?.updateViewLayout(view, params)
+            }
+        }
     }
 
     private fun executeCustomFlick(node: AccessibilityNodeInfo, repeats: Int, duration: Long) {

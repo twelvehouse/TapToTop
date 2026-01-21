@@ -1,11 +1,13 @@
 <resources>
     <string name="app_name">TapToTop</string>
-    <string name="accessibility_service_description">Scrolls to the top by tapping the status bar.</string>
+    <string name="accessibility_service_description">Scrolls to the top by tapping the status bar area.</string>
     <string name="btn_open_settings">Open Accessibility Settings</string>
     <string name="btn_battery_settings">Disable Battery Optimization</string>
     <string name="label_repeat_count">Scroll Power (Repeat count)</string>
     <string name="label_duration">Scroll Speed (ms per flick)</string>
     <string name="label_duration_hint">Smaller values mean faster, more powerful momentum.</string>
+    <string name="label_overlay_height">Overlay Area Height (px)</string>
+    <string name="label_overlay_height_hint">Height from the top. Default follows status bar height.</string>
     <string name="label_settings_auto_save">Settings are saved immediately upon change.</string>
     <string name="error_service_disabled">Accessibility service is currently disabled.</string>
     <string name="error_how_to_fix">TapToTop requires accessibility permission to detect status bar taps and perform scrolls.</string>

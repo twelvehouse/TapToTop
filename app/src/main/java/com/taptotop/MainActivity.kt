@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.provider.Settings
 import android.text.TextUtils
 import android.view.View
+import android.view.WindowInsets
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.SeekBar
@@ -30,8 +31,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // Set default overlay height to 30px
+        val defaultHeight = 30
+
+        setupSeekBar(R.id.seek_overlay_height, R.id.tv_overlay_height, "overlay_height", defaultHeight, 10)
         setupSeekBar(R.id.seek_repeat_count, R.id.tv_repeat_count, "repeat_count", 2, 1)
         setupSeekBar(R.id.seek_duration, R.id.tv_duration, "duration", 20, 10)
+    }
+
+    private fun getStatusBarHeight(): Int {
+        val insets = window.decorView.rootWindowInsets?.getInsetsIgnoringVisibility(WindowInsets.Type.statusBars())
+        return insets?.top ?: 100
     }
 
     private fun setupSeekBar(seekId: Int, tvId: Int, prefKey: String, default: Int, min: Int) {
