@@ -6,6 +6,8 @@
     <string name="label_repeat_count">スクロールの強さ (連続実行回数)</string>
     <string name="label_duration">1回あたりのスクロール速度 (ms)</string>
     <string name="label_duration_hint">値が小さいほど高速で、強力な慣性がつきます。</string>
+    <string name="label_overlay_height">オーバーレイ領域の高さ (px)</string>
+    <string name="label_overlay_height_hint">上端からの高さです。デフォルトは30pxです。</string>
     <string name="label_settings_auto_save">設定は変更すると即座に保存されます。</string>
     <string name="error_service_disabled">アクセシビリティサービスが無効です。</string>
     <string name="error_how_to_fix">ステータスバーのタップ検知とスクロール実行には、この許可が必要です。</string>
